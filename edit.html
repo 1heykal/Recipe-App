@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <title>Recipe App</title>
+    <link href="public/images/recipe.png" rel="icon">
+    <link rel="stylesheet" href="public/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="title-bar">
+        <h1 class="title">Recipe App</h1>
+    </header>
+    <nav id="home">  <a href="index.html"><img src="https://www.pngkit.com/png/full/31-316559_white-home-icon-no-background.png" alt="Home icon"><h2>Home</h2></a></nav>
+    <div id="edit-recipe" class="content-wrapper">
+        <input id="recipe-edit__title" class="content-wrapper" placeholder="Title">
+        <textarea id="recipe-edit__steps" class="content-wrapper" placeholder="Write recipe steps here..."></textarea>
+    </div>
+    <div class="ingredients content-wrapper">
+        <h2>The Ingredients</h2>
+        <div id="ingredients"></div>
+
+        <div id="new-ingredient">
+            <form>
+                <input id="add-ingredient-input"type="ingredient-text" placeholder="Type new ingredient here.." name="newIngredient">
+                <button id="add-ingredient">Add Ingredient</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="danger-zone content-wrapper">
+        <h2>Danger Zone</h2>
+        <button id="remove-recipe">Remove Recipe</button>
+    </div>
+</body>
+<footer>
+     <div id="copyrights" class="content-wrapper">
+        <p id="code">&lt;&sol;&gt;</p>
+        <p id="developed-by">This website is developed by</p> <a href="https://www.linkedin.com/in/1heykal" target="_blank">
+            Osama Heykal </a>
+     </div> 
+</footer>
+<script src="public/scripts/edit-bundle.js"></script>
+
+</html>
